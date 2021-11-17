@@ -83,12 +83,19 @@ def caracterMasUsado(texto, insenCase):
     # y el tipo de datos de su elemento es tuple. x es el elemento de esta tupla,
     #  donde x[0] es la clave y x[1] es el valor. key=lambda x:x[1] indica que la clave de comparación 
     # es el valor de los elementos del diccionario.
+    """
     dicciOrdenado = sorted(dicci.items(), key=lambda x: x[1], reverse=True)
-    conta=0
+    conta=1
     for clave in dicciOrdenado:
         conta+=1
         if conta>3:
             break
-        print(clave[0],clave[1])
+            print(clave[0],clave[1])
+    """
 
+    dicciOrdenado = sorted(dicci.items(), key=lambda x: x[1], reverse=True)
+    conta=0
+    while conta<=2:
+        conta+=1
+        print(dicciOrdenado[conta][0],dicciOrdenado[conta][1])
 
