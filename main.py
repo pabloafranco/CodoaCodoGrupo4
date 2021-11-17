@@ -17,30 +17,41 @@ while ans:
     if ans=="1":
         # caso 1
         print ("Caso 1")
-        print (reemplazar('Esto es  una prueba', ' ', '-'))
+        texto=input("Texto a Reemplazar: ")
+        print (reemplazar(texto, ' ', '-'))
     elif ans=="2":
         # caso 2
-        print ("Caso 2")
-        print(mayPorMin("Esto cambia Mayusculas por minusculas y viceversa"))
+        texto=input("Texto a cambiar Mayusculas por minusculas y viceversa: ")
+        print(mayPorMin(texto))
     elif ans=="3":
        # caso 3
-       print ("Caso 3")
-       print(cambioLetra('Cambiar una Letra', 12, 'l'))
+       texto=input("Texto a cambiar una letra: ")
+       indice=int(input("Indice: "))
+       letra=input("Porque letra: ")
+       print(cambioLetra(texto, indice, letra))
     elif ans=="4":
        # caso 4
        print ("Caso 4")
-       print(primeraLetraMay("veamos esta prueba si funciona bien"))
+       texto=input("Pasar primera letra mayuscua: ")
+       print(primeraLetraMay(texto))
     elif ans=="5":
        #caso 5
        print ("Caso 5")
        print (subCampeon([3,4,42,1,4,621,621,620,3,5]))
     elif ans=="6":
         #caso 5a
+        triangulo=int(input("Numero a hacer triangulo: "))
         print ("Caso 5a")
-        impTriangulo(13)
+        impTriangulo(triangulo)
     elif ans=="7":
         #caso 5b
-        caracterMasUsado("Codo a codo", True)       
+        texto=input("Nombre de la empresa(caracter mas usado): ")
+        nocase=input("Considera igual las mayuscualas/minusculas(S/N): ")
+        if nocase.upper()=="S":
+            lnocase=True
+        else:
+            lnocase=False
+        caracterMasUsado(texto, lnocase)       
     elif ans=="8":
        print("\n Adios") 
        ans = None

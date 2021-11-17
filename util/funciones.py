@@ -96,6 +96,6 @@ def caracterMasUsado(texto, insenCase):
     dicciOrdenado = sorted(dicci.items(), key=lambda x: x[1], reverse=True)
     conta=0
     while conta<=2:
-        conta+=1
         print(dicciOrdenado[conta][0],dicciOrdenado[conta][1])
+        conta+=1
 
