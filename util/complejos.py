@@ -6,14 +6,13 @@ class Complejo:
     def sumar(complejo1, complejo2):
         real =  complejo1.real + complejo2.real
         imaginario = complejo1.imaginario + complejo2.imaginario
-
-        return (real, imaginario)
+        return Complejo(real, imaginario)
 
     def restar(complejo1, complejo2):
         real =  complejo1.real - complejo2.real
         imaginario = complejo1.imaginario - complejo2.imaginario
-
-        return (real, imaginario)
+        salida = Complejo(real, imaginario)
+        return (salida)
 
     def multiplicar(complejo1, complejo2):
         """(a+bi)(c+di) = ac+adi+bci+bdi2  donde i2= -1
@@ -27,4 +26,5 @@ class Complejo:
         cuatroR = complejo1.imaginario * complejo2.imaginario * -1
         real = unoR+cuatroR
         imaginario = dosI+tresI
-        return (real, imaginario)
+        salida = Complejo(real, imaginario)
+        return (salida)

@@ -68,38 +68,47 @@ while ans:
     elif ans=="8":        
         comple1 = Complejo(20,1) 
         comple2 = Complejo(11,45)
-        print (Complejo.sumar(comple1,comple2))
+        resultado=Complejo.sumar(comple1,comple2)
+
+        print (resultado.real, resultado.imaginario)
 
     elif ans=="9":        
         comple1 = Complejo(10,18)  
         comple2 = Complejo(8,45)
+        resultado=Complejo.restar(comple1,comple2)
 
-        print (Complejo.restar(comple1,comple2))
+        print (resultado.real, resultado.imaginario)
 
     elif ans=="10":
         comple1 = Complejo(2,4)
         comple2 = Complejo(3,-2)
-        print (Complejo.multiplicar(comple1,comple2))
+        resultado=Complejo.multiplicar(comple1,comple2)
+
+        print (resultado.real, resultado.imaginario)
 
     elif ans=="11":
         a = Vector(2,1,-2)
         b = Vector(1,-3,1) 
-        print (Vector.sumar(a,b))
+        salida=Vector.sumar(a,b)
+        print (salida.x, salida.y, salida.z)
 
     elif ans=="12":
         a = Vector(4,-8,6)
         b = Vector(1,4,2) 
-        print (Vector.restar(a,b))
+        salida=Vector.restar(a,b)
+        print (salida.x, salida.y, salida.z)
 
     elif ans=="13":
         a = Vector(1,2,3)
         b = Vector(4,5,6) 
-        print (Vector.multiplicar(a,b))
+        salida=Vector.multiplicar(a,b)
+        print (salida.x, salida.y, salida.z)
 
     elif ans=="14":
         a = Vector(4,6,8)
         escalar = 2
-        print (Vector.dividir(a,escalar))
+        salida=Vector.dividir(a,escalar)
+        print (salida.x, salida.y, salida.z)
 
 
     elif ans=="99":
