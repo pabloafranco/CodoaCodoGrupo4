@@ -70,7 +70,7 @@ def caracterMasUsado(texto, insenCase):
     for letra in texto:
         if insenCase:
             #Si no le importa mayusculas o minusculas llevo todo a mayusculas
-            letra = letra.upper()
+            letra = letra.lower()
 
         if letra != ' ':
             if letra not in  dicci:
